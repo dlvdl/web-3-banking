@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './style'
-import { Header, Hero, Stats } from './components/index'
+import { Header, Hero, Stats, Business } from './components/index'
 
 function App() {
   return (
@@ -17,9 +17,10 @@ function App() {
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.flexCenter} ${styles.paddingX}`}>
         <div className={styles.boxWidth}>
           <Stats />
+          <Business />
         </div>
       </div>
     </div>
